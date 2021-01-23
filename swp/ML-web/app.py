@@ -27,7 +27,7 @@ CLASS_MAPPING = ['metal', 'plastic', 'cardboard', 'paper', 'trash', 'glass']
 
 # Make the prediction human-readable
 img_class_map = None
-with open('app/index_to_name.json') as f:
+with open('index_to_name.json') as f:
             img_class_map = json.load(f)
 
 
