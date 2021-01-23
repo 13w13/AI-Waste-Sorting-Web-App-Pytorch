@@ -68,7 +68,7 @@ def success():
         #test_classes = str(CLASS_MAPPING[inference])
         #output = output
        #respond with the inference
-        return render_template('inference.html', name=inference, confidence=confidence)
+        return render_template('inference.html', name=class_name, confidence=confidence)
 
 #@app.route('/infer', methods=['POST'])
 #def success():
