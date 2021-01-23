@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <p class="lead">File uploaded successfully. You have uploaded an image of</p>
+    <h1 class="display-4">{{name}}!</h1>
+    <!--h1 class="display-4">{{output}}!</h1-->
+    <p class="text-sm mb-0">Confidence: <strong>{{confidence}}%</strong></p>
+    <p class="text-sm mb-0"> <a href="/">Try again</a></p>
+</div>
+
+{% endblock %}
