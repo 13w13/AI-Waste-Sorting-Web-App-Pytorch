@@ -5,7 +5,7 @@ import torch.nn.functional as F
 import numpy as np
 from torch import optim
 from PIL import Image
-from .network import Net
+from network import Net
 import json
 
 # Define model - ref CNN2

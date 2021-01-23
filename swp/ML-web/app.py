@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 import base64, json
 from io import BytesIO
-from .model import MyModel
+from model import MyModel
 import numpy as np
 import os
 from math import floor
