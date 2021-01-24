@@ -1,6 +1,5 @@
 FROM python:3
 
-MAINTAINER Imad Toubal
 
 WORKDIR /app
 

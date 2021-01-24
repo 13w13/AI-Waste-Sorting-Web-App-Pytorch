@@ -1,6 +1,6 @@
 # AI Waste Sorting using transfer learning with Pytorch
-Antoine Settelen, Edgar Jullien, Simon Weiss   
 U4 Project - Deep Learning for Business - AI&BA - TBS
+Antoine Settelen, Edgar Jullien, Simon Weiss   
 
 ~3 weeks development  
 
@@ -14,6 +14,8 @@ Check the demo [here](https://ml-app-pytorch.herokuapp.com/).
 In this project we will develop a classifier to seperate waste into six classes : glass, paper, cardboard, plastic, metal, and trash based on their images. As a result of rapid urbanization and population growth, the amount of waste produced each year in the world is expected to rise to 3.4 billion tons over the next three decades, up from 2.01 billion tons in 2016, according to the World Bank.   
 What a Waste 2.0 report underlines the crucial importance of household waste management for sustainable, healthy and inclusive urban development, and highlights the fact that this sector is often neglected, particularly in low-income countries.
 This project aims to demonstrate the potential of AI in waste management and in autoamtic sorting systems helping ciruclar economies to better design product reuse and recycling.  
+
+![Recycling Waste](https://i.pinimg.com/originals/d1/89/cb/d189cbde475f5994917c1ed32fb8b1e0.jpg)
 
 Automatically classifying the types of waste would effectively : 
 - be an aid to the domestic sorting of waste
@@ -38,7 +40,7 @@ You can find the dataset used in the /dataset folder inside the notebook folder.
 ### Pytorch Learning
 You will find our notebook used to train our model in /notebook folder and its html generated file. You can open it locally our use colab to use GPU instance provided by Google. 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-rC0ingheeVI6kjBm8YBEk9q2NPm3nB6#scrollTo=P1b-eEtXq6cT)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-rC0ingheeVI6kjBm8YBEk9q2NPm3nB6#scrollTo=P1b-eEtXq6cT)  
 First, we configured our own neural network with pytorch and then tested our results with the accuracy score. 
 Then we used ResNet-50 CNN within the transfer learning method. Our maximum score was 97% accuracy. 
 ResNet-50 is a convolutional neural network that is 50 layers deep. You can load a pretrained version of the network trained on more than a million images from the ImageNet database The pretrained network can classify images into 1000 object categories, such as keyboard, mouse, pencil, and many animals. As a result, the network has learned rich feature representations for a wide range of images.
@@ -46,23 +48,14 @@ Once our model was trained, we exported its weights as a pth file "cnn2.pth" to 
 
 ## Demo
 
-Check the demo [here](https://ml-app-pytorch.herokuapp.com/). You can use the dataset images for testing but also use your own images. Our model is not perfect and is only the beginning of neural network definition, so it will certainly have incorect predictions on a custom dataset. 
+Check the demo [here](https://ml-app-pytorch.herokuapp.com/). You can use the dataset images for testing but also use your own images. Our model is not perfect and is only the beginning of neural network definition, so it will certainly have incorect predictions on a custom dataset.   
 We will appreciate any recommendations or advices to improve our model! 
 
-### Malignant Samples
+### Screenshots
 
-![malignant_1](https://user-images.githubusercontent.com/640792/63314664-09142700-c326-11e9-90fc-ae358c59b045.jpg)
+![Home](https://user-images.githubusercontent.com/640792/63314664-09142700-c326-11e9-90fc-ae358c59b045.jpg)
 
-![malignant_2](https://user-images.githubusercontent.com/640792/63314665-09142700-c326-11e9-9075-607a5d900bd1.jpg)
-
-
-
-### Benign Samples
-
-![benign_1](https://user-images.githubusercontent.com/640792/63314649-01ed1900-c326-11e9-8db5-6f6ac8f01f8b.jpg)
-
-![benign_2](https://user-images.githubusercontent.com/640792/63314650-01ed1900-c326-11e9-8a23-1139c38de5e6.jpg)
-
+![Classifiction](https://user-images.githubusercontent.com/640792/63314665-09142700-c326-11e9-9075-607a5d900bd1.jpg)
 
 
 ## Installation and Deployment
