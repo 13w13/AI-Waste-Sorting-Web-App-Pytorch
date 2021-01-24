@@ -141,7 +141,4 @@ OR
 - Stanford CS 229 & trashnet dataset 
 - [Fastai kaggle notebook](https://www.kaggle.com/twhitehurst3/fastai-v1-waste-classification)
 - [Pytorch-Flask-Starter](https://github.com/imadtoubal/Pytorch-Flask-Starter)
-- [ML-web-app] (https://github.com/imadelh/ML-web-app)
-
-
-link : https://ai-sorting.herokuapp.com/
+- [ML-web-app](https://github.com/imadelh/ML-web-app)
