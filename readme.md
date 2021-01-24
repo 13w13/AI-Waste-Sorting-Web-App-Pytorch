@@ -53,9 +53,9 @@ We will appreciate any recommendations or advices to improve our model!
 
 ### Screenshots
 
-![Home](https://user-images.githubusercontent.com/640792/63314664-09142700-c326-11e9-90fc-ae358c59b045.jpg)
+![Home](https://raw.githubusercontent.com/13w13/AI-Waste-Sorting-Web-App-Pytorch/main/notebook/Screenshot_home.png)
 
-![Classifiction](https://user-images.githubusercontent.com/640792/63314665-09142700-c326-11e9-9075-607a5d900bd1.jpg)
+![Classifiction](https://raw.githubusercontent.com/13w13/AI-Waste-Sorting-Web-App-Pytorch/main/notebook/Screenshot_predict.png)
 
 
 ## Installation and Deployment
