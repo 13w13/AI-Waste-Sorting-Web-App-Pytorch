@@ -45,7 +45,7 @@ Notebook
 Resnet50 pre-train
 First, we will train a model based on Densenet121, using Federated learning approach. Specifically, we will create two (virtual) workers, `hospital_1` and `hospital_2`, where Histopathological images will be sent for training. Then the results from each worker is combined to build a privacy preserving classifier. Check the [notebook](https://github.com/avinassh/breast-cancer-prediction/blob/master/Detecting_Breast_Cancer_With_Federated_Learning.ipynb) for more details on training.
 
-
+ResNet-50 is a convolutional neural network that is 50 layers deep. You can load a pretrained version of the network trained on more than a million images from the ImageNet database [1]. The pretrained network can classify images into 1000 object categories, such as keyboard, mouse, pencil, and many animals. As a result, the network has learned rich feature representations for a wide range of images.
 ## Demo
 
 Check the demo [here](https://pytorch-cancer-prediction.herokuapp.com/). You can use following histopathological images for testing
