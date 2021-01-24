@@ -25,7 +25,7 @@ Automatically classifying the types of waste would effectively :
 
 ### Dataset
 
-LaThe data comes from the dataset [trashnet](https://github.com/garythung/trashnet) for a final project of [Stanford's CS 229: Machine Learning class](http://cs229.stanford.edu)
+The data comes from the dataset [trashnet](https://github.com/garythung/trashnet) for a final project of [Stanford's CS 229: Machine Learning class](http://cs229.stanford.edu)
 the dataset consists of 2527 images:
 - 501 glass
 - 594 paper
@@ -35,12 +35,15 @@ the dataset consists of 2527 images:
 - 137 trash
 
 The pictures were taken by placing the object on a white posterboard and using sunlight and/or room lighting. The pictures have been resized down to 512 x 384, which can be changed in `data/constants.py` (resizing them involves going through step 1 in usage). The devices used were Apple iPhone 7 Plus, Apple iPhone 5S, and Apple iPhone SE.
-
+You can find the dataset used in the /dataset folder inside the notebook folder. 
 
 ### Pytorch Learning
+You will find our notebook used to train our model in /notebook folder and its html generated file. You can open it locally our use colab to use GPU instance provided by Google. 
 
-Notebook 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/13w13/AI-Waste-Sorting-Web-App-Pytorch/blob/main/notebook/Model.ipynb)
+
+
+
 1st neural network
 Resnet50 pre-train
 First, we will train a model based on Densenet121, using Federated learning approach. Specifically, we will create two (virtual) workers, `hospital_1` and `hospital_2`, where Histopathological images will be sent for training. Then the results from each worker is combined to build a privacy preserving classifier. Check the [notebook](https://github.com/avinassh/breast-cancer-prediction/blob/master/Detecting_Breast_Cancer_With_Federated_Learning.ipynb) for more details on training.
