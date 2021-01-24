@@ -58,44 +58,92 @@ We will appreciate any recommendations or advices to improve our model!
 ![Classifiction](https://raw.githubusercontent.com/13w13/AI-Waste-Sorting-Web-App-Pytorch/main/notebook/Screenshot_predict.png)
 
 
-## Installation and Deployment
+## Installation and local Deployment of the web app
 
+## Getting Started (using Python virtualenv)
+Clone the repo
+You need to have Python installed in your computer.
 
-### System Requirements
+1. Install `virtualenv`: 
+    ```
+    pip install virtualenv
+    ```
+2. Create a Python virtual environment:
+    ```
+    virtualenv venv
+    ```
+3. Activate virtual environment:
+    1. Windows:
+    ```
+    cd venv\Scripts
+    activate
+    cd ..\..
+    ```
+    2. Lunix / Mac:
+    ```
+    source venv/bin/activate
+    ```
+4. Install libraries:
+   
+   ```
+   pip install -r requirements.txt
+   ```
 
+### Run the code
 
-Works with Python 3.5 and above
+* Run the app:
+    ```
+    flask run
+    ```
+* Run on a specific port:
+    ```
+    flask run -p <port>
+    ```
 
+## Getting Started (using Docker)
 
-### Python Requirements
+1. Create a Docker image
+    ```
+    docker build -t flaskml .
+    ```
+    This will create an image with the name `flaskml`. You can replace that with a custom name for your app.
 
-Install them from `requirements.txt`:
-
-    pip install -r requirements.txt
-
-
-### Local Deployment
-
-Run the server:
-
-    python app.py
-
-
-Visit `localhost:5000`
+2. Run the docker image
+    ```
+    docker run -d -p 127.0.0.1:5000:80 flaskml
+    ```
+    This will run the app on port `5000`. You can replace that with which ever port that is more suitable.
 
 ### Heroku Deployment
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/avinassh/breast-cancer-prediction)
 
+## Deploying to Heroku
 
+- Create Heroku app
+    ```
+    heroku create 
+    git push heroku master
+    ```
+    
+OR
+
+- Add to existing Heroku app
+    ```
+    heroku git:remote -a <your-app-name>
+    git push heroku master
+
+## Built With
+
+* [Pytorch](https://pytorch.org/) - The Machine Learning framework used
+* [Flask](http://flask.palletsprojects.com/en/1.1.x/) - The web server library
+* [Pytorch-Flask-Starter](https://github.com/imadtoubal/Pytorch-Flask-Starter)
 
 ## Acknowledgments
-- Thanks to the Stanford CS 229 autumn 2016-2017 teaching staff for a great class!
-- [@e-lab](http://github.com/e-lab) for their [weight-init Torch module](http://github.com/e-lab/torch-toolbox/blob/master/Weight-init/weight-init.lua)
+- Stanford CS 229 & trashnet dataset 
+- [Fastai kaggle notebook](https://www.kaggle.com/twhitehurst3/fastai-v1-waste-classification)
+- [Pytorch-Flask-Starter](https://github.com/imadtoubal/Pytorch-Flask-Starter)
+- [ML-web-app] (https://github.com/imadelh/ML-web-app)
 
-Test
-Inspire by github repo : 
-https://github.com/imadelh/ML-web-app
-https://github.com/imadtoubal/Pytorch-Flask-Starter
 
 link : https://ai-sorting.herokuapp.com/
