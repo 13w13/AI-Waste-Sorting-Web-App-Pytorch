@@ -116,9 +116,7 @@ You need to have Python installed in your computer.
 
 ### Heroku Deployment
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/avinassh/breast-cancer-prediction)
-
-## Deploying to Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/13w13/AI-Waste-Sorting-Web-App-Pytorch)
 
 - Create Heroku app
     ```
