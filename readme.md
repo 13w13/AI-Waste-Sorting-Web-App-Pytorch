@@ -40,7 +40,7 @@ You can find the dataset used in the /dataset folder inside the notebook folder.
 ### Pytorch Learning
 You will find our notebook used to train our model in /notebook folder and its html generated file. You can open it locally our use colab to use GPU instance provided by Google. 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/13w13/AI-Waste-Sorting-Web-App-Pytorch/blob/main/notebook/Model.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-rC0ingheeVI6kjBm8YBEk9q2NPm3nB6#scrollTo=P1b-eEtXq6cT)
 
 
 
